@@ -12,6 +12,7 @@ export const Home = () => {
     <>
       <nav className="flex-center-align">
         <div className="navbar">
+          <div className="nav-slider"></div>
           <a href="#">
             <img src={logo} alt="logo" />
           </a>

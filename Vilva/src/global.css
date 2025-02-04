@@ -1,0 +1,188 @@
+:root {
+    --accentLighter: #C29678;
+    --accentLighterOp50: rgba(194, 150, 120, 0.7); 
+    --accent: #42362D;
+    --softBlue: #7BA6C2;
+    --darkBlue: #2D3A42;
+    --white: #FFFFFF;
+    --offWhite: #F5EFE7;
+    --accentOp50: rgba(194, 150, 120, 0.5);
+}
+div#root {
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "quicksand";
+    src: url(./assets/fonts/Quicksand-Light.ttf) format('truetype');
+    src: url(./assets/fonts/Quicksand-Medium.ttf) format('truetype');
+    src: url(./assets/fonts/Quicksand-Bold.ttf) format('truetype');
+    src: url(./assets/fonts/Quicksand-Regular.ttf) format('truetype');
+    src: url(./assets/fonts/Quicksand-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: "tan-mon-cheri";
+    src: url(./assets/fonts/tan-mon-cheri.ttf) format('truetype');
+}
+h1 {
+    font-family: "tan-mon-cheri";
+    font-size: 6rem;
+}
+h2 {
+    font-family: "tan-mon-cheri";
+}
+h3 {
+    font-family: "tan-mon-cheri";
+}
+p {
+    font-family: "quicksand";
+}
+input, button, a {
+    font-family: "quicksand";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-a-center {
+    display: flex;
+    align-items: center;
+}
+.flex-j-center {
+    display: flex;
+    justify-content: center;
+}
+.flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-col {
+    flex-direction: column;
+}
+/*Reuseable elements*/
+/*NAV-------------------------------------------------------*/
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-bottom: 3px solid var(--accent);
+    img {
+        width: 100%;
+    }
+    .navbar {
+        margin-top: 0.5rem;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        border: 5px solid var(--accentLighter);
+        background-color: var(--offWhite);
+        border-radius: 100px;
+        img{
+            width: 64px;
+        }
+        .nav-slider {
+            position: absolute;
+            left: 0.2rem;
+            height: 5rem;
+            width: 7rem;
+            background-color: var(--accentLighter);
+            border-radius: 200px;
+            z-index: 0;
+        }
+        a {
+            text-align: center;
+            margin: 1rem 1.5rem 1rem 1.5rem;
+            display: inline;
+            text-decoration: none;
+            color: var(--accent);
+            z-index: 1;
+            transition: 0.2s;
+        }
+        a:hover {
+            color: var(--accentLighter);
+        }
+    }
+    .banner-logo {
+        position: absolute;
+        flex-direction: column;
+        bottom: 16rem;
+        left: 23rem;
+        color: var(--offWhite);
+        height: 25rem;
+        width: 25rem;
+        background-color: var(--accentLighterOp50);
+        border-radius: 200px;
+        border: 3px solid var(--offWhite);
+        img {
+            width: 70%;
+        }
+    }
+    .tbd {
+        top: 30vh;
+        position: absolute;
+    }
+    .circle {
+        background-color: var(--accentLighter);
+        border-radius: 100px;
+        margin-top: 5rem;
+        p {
+            text-align: center;
+            margin: 2rem;
+            text-decoration: none;
+            color: var(--white);
+        }
+    }
+}
+
+/*FOOTER--------------------------------------------------*/
+footer {
+    padding-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem 0 5rem;
+    img {
+        margin: 0.5rem;
+    }
+    .footer-mid {
+        text-align: center;
+        flex-direction: column;
+        width: 33vw;
+    }
+    .footer-right {
+        flex-direction: column;
+        min-width: 258px;
+    }
+}
+input {
+    border-radius: 0px;
+    border: 1px solid var(--accent);
+    height: 2rem;
+    width: 9.7rem;
+}
+button {
+    background-color: var(--accentLighter);
+    color: white;
+    border: 1px solid var(--accent);
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: 0.2s;
+}
+button:hover {
+    color: var(--offWhite);
+    background-color: var(--accent);
+    border: 3px solid var(--accentLighter);
+}

@@ -1,132 +1,7 @@
-:root {
-    --accentLighter: #C29678;
-    --accentLighterOp50: rgba(194, 150, 120, 0.7); 
-    --accent: #42362D;
-    --softBlue: #7BA6C2;
-    --darkBlue: #2D3A42;
-    --white: #FFFFFF;
-    --offWhite: #F5EFE7;
-}
-div#root {
-    overflow-x: hidden;
-}
-@font-face {
-    font-family: "quicksand";
-    src: url(./assets/fonts/Quicksand-Light.ttf) format('truetype');
-    src: url(./assets/fonts/Quicksand-Medium.ttf) format('truetype');
-    src: url(./assets/fonts/Quicksand-Bold.ttf) format('truetype');
-    src: url(./assets/fonts/Quicksand-Regular.ttf) format('truetype');
-    src: url(./assets/fonts/Quicksand-SemiBold.ttf) format('truetype');
-}
-@font-face {
-    font-family: "tan-mon-cheri";
-    src: url(./assets/fonts/tan-mon-cheri.ttf) format('truetype');
-}
-h2 {
-    font-family: "tan-mon-cheri";
-}
-h3 {
-    font-family: "tan-mon-cheri";
-}
-p {
-    font-family: "quicksand";
-}
-input, button, a {
-    font-family: "quicksand";
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.flex-a-center {
-    display: flex;
-    align-items: center;
-}
-.flex-j-center {
-    display: flex;
-    justify-content: center;
-}
 .logo {
     width: 20%;
 }
-nav {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    border-bottom: 3px solid var(--accent);
-    img {
-        width: 100%;
-    }
-    .navbar {
-        margin-top: 0.5rem;
-        position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        border: 5px solid var(--accentLighter);
-        background-color: var(--offWhite);
-        border-radius: 100px;
-        img{
-            width: 64px;
-        }
-        a {
-            text-align: center;
-            margin: 1rem 1.5rem 1rem 1.5rem;
-            display: inline;
-            text-decoration: none;
-            color: var(--accent);
-        }
-        a:focus {
-            margin: 0.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--accentLighter);
-            border-radius: 100px;
-            width: 7.5rem;
-            height: 5rem;
-            color: var(--offWhite);
-        }
-    }
-    .banner-logo {
-        position: absolute;
-        flex-direction: column;
-        bottom: 16rem;
-        left: 23rem;
-        color: var(--offWhite);
-        height: 25rem;
-        width: 25rem;
-        background-color: var(--accentLighterOp50);
-        border-radius: 200px;
-        border: 3px solid var(--offWhite);
-        img {
-            width: 70%;
-        }
-    }
-    .tbd {
-        top: 30vh;
-        position: absolute;
-    }
-    .circle {
-        background-color: var(--accentLighter);
-        border-radius: 100px;
-        margin-top: 5rem;
-        p {
-            text-align: center;
-            margin: 2rem;
-            text-decoration: none;
-            color: var(--white);
-        }
-    }
-}
+/*SEKTION ONE--------------------------------------------------*/
 .h-s1-wrapper {
     margin: 2rem 0 2rem 0;
     .s1-text-wrapper {
@@ -171,7 +46,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/*SEKTION TWO---------------------------------------------------*/
 .s2 {
     position: relative;
     padding-top: 2rem;
@@ -256,39 +131,79 @@ nav {
         }
     }
 }
-
-footer {
-    padding-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 5rem 0 5rem;
-    img {
-        margin: 0.5rem;
-    }
-    .footer-mid {
-        text-align: center;
-        flex-direction: column;
-        width: 33vw;
-    }
-    .footer-right {
-        flex-direction: column;
-        min-width: 258px;
-    }
-}
-input {
-    border-radius: 0px;
-    border: 1px solid var(--accent);
-    height: 2rem;
-    width: 9.7rem;
-}
-button {
+/*SoMe BANNER-----------------------------------------------------------*/
+.SoMe-banner {
+    height: 100vh;
+    width: 100vw;
     background-color: var(--accentLighter);
-    color: white;
-    border: 1px solid var(--accent);
-    text-align: center;
-    width: 10rem;
-    height: 2rem;
-    margin: 1rem;
+    .SoMe-banner-h1 {
+        width: 25rem;
+        height: 25rem;
+        background-color: var(--accent);
+        border-radius: 400px;
+        border: 15px var(--accentOp50) solid;
+        color: white;
+    }
+}
+.SoMe-s1 {
+    background-color: var(--accentLighter);
+    img{
+        width: 40vw;
+        border: 5px var(--accent) solid;
+        border-top-left-radius: 800px;
+        border-bottom-left-radius: 800px;
+        
+    }
+    p{
+        color: var(--offWhite);
+        margin: 0 4rem 0 2rem;
+    }
+    .SoMe-s1-text-wrapper {
+        width: 62vw;
+        height: 20rem;
+        margin-right: -2rem;
+        background-color: var(--accent);
+    }
+}
+.SoMe-s2 {
+    background-image: url(./assets/SVG/somecta.svg);
+    background-size: cover;
+    height: 25rem;
+    width: 100vw;
+    .SoMe-s2-cta {
+        width: 25rem;
+        height: 25rem;
+        text-align: center;
+        color: var(--offWhite);
+        background-color: var(--accent);
+        border-radius: 200px;
+        p {
+            width: 22rem;
+        }
+    }
+}
+.SoMe-s3 {
+    background-image: url(./assets/svg/someBackgrounds3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 55rem;
+}
+.SoMe-s3-img-wrapper {
+    width: 60%;
+}
+.SoMe-s3-img {
+    img {
+        width: 20%;
+        margin-left: 25%;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+.SoMe-s3-text {
+    width: 40%;
+    p {
+        color: var(--offWhite);
+        margin-right: 25%;
+    }
 }
