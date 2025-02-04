@@ -1,1 +1,294 @@
+:root {
+    --accentLighter: #C29678;
+    --accentLighterOp50: rgba(194, 150, 120, 0.7); 
+    --accent: #42362D;
+    --softBlue: #7BA6C2;
+    --darkBlue: #2D3A42;
+    --white: #FFFFFF;
+    --offWhite: #F5EFE7;
+}
+div#root {
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "quicksand";
+    src: url(./assets/fonts/Quicksand-Light.ttf) format('truetype');
+    src: url(./assets/fonts/Quicksand-Medium.ttf) format('truetype');
+    src: url(./assets/fonts/Quicksand-Bold.ttf) format('truetype');
+    src: url(./assets/fonts/Quicksand-Regular.ttf) format('truetype');
+    src: url(./assets/fonts/Quicksand-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: "tan-mon-cheri";
+    src: url(./assets/fonts/tan-mon-cheri.ttf) format('truetype');
+}
+h2 {
+    font-family: "tan-mon-cheri";
+}
+h3 {
+    font-family: "tan-mon-cheri";
+}
+p {
+    font-family: "quicksand";
+}
+input, button, a {
+    font-family: "quicksand";
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-a-center {
+    display: flex;
+    align-items: center;
+}
+.flex-j-center {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    width: 20%;
+}
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-bottom: 3px solid var(--accent);
+    img {
+        width: 100%;
+    }
+    .navbar {
+        margin-top: 0.5rem;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        border: 5px solid var(--accentLighter);
+        background-color: var(--offWhite);
+        border-radius: 100px;
+        img{
+            width: 64px;
+        }
+        a {
+            text-align: center;
+            margin: 1rem 1.5rem 1rem 1.5rem;
+            display: inline;
+            text-decoration: none;
+            color: var(--accent);
+        }
+        a:focus {
+            margin: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--accentLighter);
+            border-radius: 100px;
+            width: 7.5rem;
+            height: 5rem;
+            color: var(--offWhite);
+        }
+    }
+    .banner-logo {
+        position: absolute;
+        flex-direction: column;
+        bottom: 16rem;
+        left: 23rem;
+        color: var(--offWhite);
+        height: 25rem;
+        width: 25rem;
+        background-color: var(--accentLighterOp50);
+        border-radius: 200px;
+        border: 3px solid var(--offWhite);
+        img {
+            width: 70%;
+        }
+    }
+    .tbd {
+        top: 30vh;
+        position: absolute;
+    }
+    .circle {
+        background-color: var(--accentLighter);
+        border-radius: 100px;
+        margin-top: 5rem;
+        p {
+            text-align: center;
+            margin: 2rem;
+            text-decoration: none;
+            color: var(--white);
+        }
+    }
+}
+.h-s1-wrapper {
+    margin: 2rem 0 2rem 0;
+    .s1-text-wrapper {
+        height: 90vh;
+    }
+   .s1-text {
+    margin-left: 5rem;
+    width: 50vw;
+    .s1-text-wrapper-circle {
+        position: relative;
+        display: flex;
+        .s1-text2 {
+            width: 35vw;
+        }
+        .s1-circle {
+            position: absolute;
+            right: -15%;
+            transform: rotate(-25deg);
+            text-align: center;
+            background-color: var(--accentLighterOp50);
+            color: var(--offWhite);
+            border-radius: 200px;
+            height: 16rem;
+            width: 16rem;
+        }
+    }
+    }
+    .s1-img {
+        width: 50vw;
+        img {
+            width: 90%;
+            border-radius: 2px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        }
+    }
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s2 {
+    position: relative;
+    padding-top: 2rem;
+
+}
+.h-s2-circles {
+    position: absolute;
+    background-color: var(--accent);
+    z-index: -99;
+    border-radius: 200px;
+}
+.h-s2-circle1 {
+    top: 0%;
+    width: 20rem;
+    height: 20rem;
+    h2 {
+        color: var(--offWhite);
+    }
+}
+.h-s2-circle2 {
+    left: -10%;
+    top: 25%;
+    width: 25rem;
+    height: 25rem;
+}
+.h-s2-circle3 {
+    right: -5%;
+    top: 15%;
+    width: 23rem;
+    height: 23rem;
+}
+.h-s2-circle4 {
+    left: 65%;
+    top: 95%;
+    width: 15rem;
+    height: 15rem;
+}
+.h-s2-circle5 {
+    left: 35%;
+    top: 80%;
+    width: 10rem;
+    height: 10rem;
+}
+.h-s2-circle6 {
+    left: 15%;
+    top: 110%;
+    width: 16rem;
+    height: 16rem;
+}
+.home-products {
+    z-index: 1;
+    margin: 10rem 0 10rem 0;
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 16px solid transparent;
+        border-right: 32px solid var(--accent);
+        border-bottom: 16px solid transparent;
+    }
+    .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 16px solid transparent;
+        border-left: 32px solid var(--accent);
+        border-bottom: 16px solid transparent;
+    }
+    .home-product {
+        background-image: url(./assets/SVG/mockup.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-direction: column;
+        height: 25rem;
+        margin: 1rem;
+        text-align: center;
+        color: var(--accent);
+        .product-text {
+            margin: 0.5rem;
+            width: 14rem;
+        }
+        button {
+            background-color: var(--accent);
+        }
+    }
+}
+
+footer {
+    padding-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem 0 5rem;
+    img {
+        margin: 0.5rem;
+    }
+    .footer-mid {
+        text-align: center;
+        flex-direction: column;
+        width: 33vw;
+    }
+    .footer-right {
+        flex-direction: column;
+        min-width: 258px;
+    }
+}
+input {
+    border-radius: 0px;
+    border: 1px solid var(--accent);
+    height: 2rem;
+    width: 9.7rem;
+}
+button {
+    background-color: var(--accentLighter);
+    color: white;
+    border: 1px solid var(--accent);
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem;
+}
