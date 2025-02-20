@@ -1,0 +1,232 @@
+[
+    {
+        "circleOne":{
+            "x": "404",
+            "y": "70",
+            "size": "100",
+            "name": "Community"
+        },
+        "circleTwo":{
+            "x": "191",
+            "y": "193",
+            "size": "135",
+            "name": "Cross-linking"
+        },
+        "circleThree":{
+            "x": "445",
+            "y": "218",
+            "size": "43",
+            "name": "SMM"
+        },
+        "circleFour":{
+            "x": "569",
+            "y": "232",
+            "size": "100",
+            "name": "Influencer"
+        },
+        "circleFive":{
+            "x": "503",
+            "y": "394",
+            "size": "100",
+            "name": "Followers"
+        },
+        "circleSix":{
+            "x": "304",
+            "y": "390",
+            "size": "75",
+            "name": "Reach"
+        },
+        "circleSeven":{
+            "x": "110",
+            "y": "428",
+            "size": "100",
+            "name": "Målgruppe"
+        },
+        "circleEight":{
+            "x": "284",
+            "y": "507",
+            "size": "120",
+            "name": "Interaktion"
+        },
+        "circleNine":{
+            "x": "440",
+            "y": "536",
+            "size": "125",
+            "name": "Begivenheder"
+        },
+        "circleTen":{
+            "x": "544",
+            "y": "665",
+            "size": "180",
+            "name": "Engagement"
+        },
+        "circleEleven":{
+            "x": "382",
+            "y": "695",
+            "size": "50",
+            "name": "Feed"
+        },
+        "circleTwelve":{
+            "x": "184",
+            "y": "729",
+            "size": "100",
+            "name": "Facebook"
+        },
+        "circleThirteen":{
+            "x": "365",
+            "y": "905",
+            "size": "45",
+            "name": "Filter"
+        },
+        "circleFourteen":{
+            "x": "521",
+            "y": "915",
+            "size": "125",
+            "name": "Eksponering"
+        },
+        "circleFifteen":{
+            "x": "696",
+            "y": "847",
+            "size": "35",
+            "name": "SEO"
+        },
+        "circleSixteen":{
+            "x": "765",
+            "y": "994",
+            "size": "40",
+            "name": "CTA"
+        },
+        "circleSeventeen":{
+            "x": "808",
+            "y": "835",
+            "size": "80",
+            "name": "Handle"
+        },
+        "circleEighteen":{
+            "x": "1006",
+            "y": "918",
+            "size": "145",
+            "name": "Konvertering"
+        },
+        "circleNineteen":{
+            "x": "1032",
+            "y": "791",
+            "size": "75",
+            "name": "Content"
+        },
+        "circleTwenty":{
+            "x": "1227",
+            "y": "855",
+            "size": "50",
+            "name": "Clicks"
+        },
+        "circleTwentyOne":{
+            "x": "1331",
+            "y": "905",
+            "size": "140",
+            "name": "Organisk rækkevidde"
+        },
+        "circleTwentyTwo":{
+            "x": "1454",
+            "y": "759",
+            "size": "100",
+            "name": "Instagram"
+        },
+        "circleTwentyThree":{
+            "x": "1231",
+            "y": "665",
+            "size": "160",
+            "name": "Impressions"
+        },
+        "circleTwentyFour":{
+            "x": "1621",
+            "y": "707",
+            "size": "50",
+            "name": "Blog"
+        },
+        "circleTwentyFive":{
+            "x": "1421",
+            "y": "461",
+            "size": "200",
+            "name": "Medialisering"
+        },
+        "circleTwentySix":{
+            "x": "1319",
+            "y": "412",
+            "size": "75",
+            "name": "TikTok"
+        },
+        "circleTwentySeven":{
+            "x": "1391",
+            "y": "269",
+            "size": "100",
+            "name": "Short-links"
+        },
+        "circleTwentyEight":{
+            "x": "1587",
+            "y": "284",
+            "size": "85",
+            "name": "Brand"
+        },
+        "circleTwentyNine":{
+            "x": "1508",
+            "y": "191",
+            "size": "55",
+            "name": "Selfie"
+        },
+        "circleThirty":{
+            "x": "1451",
+            "y": "45",
+            "size": "85",
+            "name": "Opslag"
+        },
+        "circleThirtyOne":{
+            "x": "1224",
+            "y": "136",
+            "size": "135",
+            "name": "Notifikationer"
+        },
+        "circleThirtyTwo":{
+            "x": "1265",
+            "y": "44",
+            "size": "38",
+            "name": "Lys"
+        },
+        "circleThirtyThree":{
+            "x": "1032",
+            "y": "57",
+            "size": "100",
+            "name": "Link-tree"
+        },
+        "circleThirtyFour":{
+            "x": "1052",
+            "y": "197",
+            "size": "85",
+            "name": "Layout"
+        },
+        "circleThirtyFive":{
+            "x": "860",
+            "y": "157",
+            "size": "100",
+            "name": "Audience"
+        },
+        "circleThirtySix":{
+            "x": "861",
+            "y": "74",
+            "size": "45",
+            "name": "Like"
+        },
+        "circleThirtySeven":{
+            "x": "687",
+            "y": "149",
+            "size": "70",
+            "name": "Tags"
+        },
+        "circleThirtyEight":{
+            "x": "652",
+            "y": "38",
+            "size": "75",
+            "name": "Story"
+        }
+    }
+]
