@@ -3,49 +3,17 @@ import logo from "../assets/SVG/logoBlack.svg";
 import linkedin from "../assets/linkedin.png";
 import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
-import banner from "../assets/627A5708-Enhanced-NR.jpg";
 import s1Img from "../assets/627A5750-Enhanced-NR.jpg";
+import logoWide from "../assets/SVG/logoArtWide.svg";
+import Nav from "../modules/Nav";
+import banner from "../assets/627A5708-Enhanced-NR.jpg";
 import logoWhite from "../assets/SVG/logoWhite.svg";
+import Footer from "../modules/Footer";
 
 export const Home = () => {
   return (
     <>
-      <nav className="flex-center-align">
-        <div className="navbar">
-          <div className="nav-slider"></div>
-          <a href="#">
-            <img src={logo} alt="logo" />
-          </a>
-          <a href="#">
-            Brand
-            <br />
-            Fotografering
-          </a>
-          <a href="#">Virksomheder</a>
-          <a href="#">Blog</a>
-          <a href="#">Kontakt</a>
-          <a href="#">
-            Online
-            <br />
-            Kurser
-          </a>
-          <a href="#">Iværksætteri</a>
-        </div>
-        <img src={banner} alt="banner" />
-        <div className="tbd circle flex-center">
-          <p>
-            Siden er under konstruktion.
-            <br />
-            Computer version er første prioritet
-            <br />
-            Siden bliver opdateret lidt gennem forløbet kan ske fejl :)
-          </p>
-        </div>
-        <div className="banner-logo flex-center">
-          <img src={logoWhite} alt="logo white" />
-          <p>Fotograf. Visuel Branding. Webdesign</p>
-        </div>
-      </nav>
+      <Nav />
 
       <section>
         <div className="h-s1-wrapper flex-a-center">
@@ -115,62 +83,49 @@ export const Home = () => {
               <h3>produkt</h3>
               <p>Duis in mi porta, laoreet sapien ut, dignissim</p>
             </div>
-            <button>Se mere</button>
+            <button className="button">Se mere</button>
           </div>
           <div className="home-product flex-center">
             <div className="product-text">
               <h3>produkt</h3>
               <p>Duis in mi porta, laoreet sapien ut, dignissim</p>
             </div>
-            <button>Se mere</button>
+            <button className="button">Se mere</button>
           </div>
           <div className="home-product flex-center">
             <div className="product-text">
               <h3>produkt</h3>
               <p>Duis in mi porta, laoreet sapien ut, dignissim</p>
             </div>
-            <button>Se mere</button>
+            <button className="button">Se mere</button>
           </div>
           <div className="home-product flex-center">
             <div className="product-text">
               <h3>produkt</h3>
               <p>Duis in mi porta, laoreet sapien ut, dignissim</p>
             </div>
-            <button>Se mere</button>
+            <button className="button">Se mere</button>
           </div>
           <div className="arrow-right"></div>
         </div>
       </section>
 
-      <footer>
-        <div>
-          <img className="logo" src={logo} alt="log" />
+      <section className="s3 flex-center">
+        <div className="s3-wrapper flex-center-col">
+          <h3>
+            <span>GRATIS</span> intro online kursus
+          </h3>
+          <p>
+            Meld dig til vores nyheds brev og modtag
+            <br />
+            en introduktion til Vilva's online kursus.
+          </p>
+
+          <button className="button">Navn</button>
+          <button className="button">E-mail</button>
         </div>
-        <div className="footer-mid flex-center">
-          <div>
-            <h3>About</h3>
-            <p>
-              Vestibulum convallis sit amet nisi non lobortis. Nunc pellentesque
-              nec ante nec commodo. Ut convallis odio quis metus consequat
-              laoreet at at nunc. Phasellus id ipsum metus. Aenean non rutrum
-              magna.
-            </p>
-          </div>
-          <div>
-            <img src={linkedin} alt="Linked In" />
-            <img src={facebook} alt="Facebook" />
-            <img src={insta} alt="Instagram" />
-          </div>
-        </div>
-        <div className="footer-right flex-a-center">
-          <div>
-            <input type="text" value={"e-mail"} readOnly />
-          </div>
-          <div>
-            <button>Nyhedsbrev</button>
-          </div>
-        </div>
-      </footer>
+      </section>
+      <Footer />
     </>
   );
 };

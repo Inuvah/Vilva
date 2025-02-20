@@ -1,10 +1,13 @@
 import React from "react";
+import NavNoBanner from "../modules/NavNoBanner";
+import Footer from "../modules/Footer";
 import s3Img from "../assets/627A5735-Enhanced-NR.jpg";
 import s2Img from "../assets/627A5760-Enhanced-NR.jpg";
 
 export const SoMe = () => {
   return (
     <>
+      <NavNoBanner />
       <div className="SoMe-banner flex-center">
         <div className="SoMe-banner-h1 flex-center">
           <h1>SoMe</h1>
@@ -48,7 +51,7 @@ export const SoMe = () => {
         </div>
       </section>
 
-      <section className="SoMe-s3 flex-center">
+      <section className="SoMe-s3 flex-center wave-container">
         <div className="SoMe-s3-img-wrapper">
           <div className="SoMe-s3-img">
             <img src={s3Img} alt="Lone i et vindue" />
@@ -72,6 +75,8 @@ export const SoMe = () => {
           </p>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };
