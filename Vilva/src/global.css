@@ -110,6 +110,7 @@ body {
 /*Reuseable elements*/
 /*NAV-------------------------------------------------------*/
 nav {
+    z-index: 10;
     position: relative;
     display: flex;
     justify-content: center;
@@ -161,10 +162,8 @@ nav {
         bottom: 16rem;
         left: 10rem;
         color: var(--offWhite);
-        max-height: 25rem;
-        max-width: 25rem;
-        min-height: 5rem;
-        min-width: 5rem;
+        height: 25rem;
+        width: 25rem;
         background-color: var(--accentLighterOp50);
         border-radius: 200px;
         border: 3px solid var(--offWhite);

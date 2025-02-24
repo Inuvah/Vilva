@@ -1,14 +1,48 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactDOM from "react-dom/client";
+import { createElement } from "react";
 import NavNoBanner from "../modules/NavNoBanner";
 import Footer from "../modules/Footer";
 import s3Img from "../assets/627A5735-Enhanced-NR.jpg";
 import s2Img from "../assets/627A5760-Enhanced-NR.jpg";
+import bannerGraphicArray from "../arrays/soMe.json";
+const windowWidth = window.innerWidth;
+const windowHeight = window.innerHeight;
+
+interface Banner {
+  id: Key | null | undefined;
+  x: number;
+  y: number;
+  size: number;
+  name: string;
+}
+
+function bannerGraphics() {
+  console.log(windowHeight, windowWidth);
+  return bannerGraphicArray.bannerGraphic.map((banner: Banner) => {
+    return (
+      <div
+        key={banner.id}
+        className="SoMe-circles"
+        style={{
+          left: banner.x / (1920 / windowWidth) + "px",
+          top: banner.y / (911 / windowHeight) + "px",
+          width: banner.size + "px",
+          height: banner.size + "px",
+        }}
+      >
+        <h2 className="SoMe-circles-h">{banner.name}</h2>
+      </div>
+    );
+  });
+}
 
 export const SoMe = () => {
   return (
     <>
       <NavNoBanner />
-      <div className="SoMe-banner flex-center">
+      <div className="SoMe-banner flex-center" id="SoMe-banner">
+        {bannerGraphics()}
         <div className="SoMe-banner-h1 flex-center">
           <h1>SoMe</h1>
         </div>
