@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/SVG/logoBlack.svg";
+import logo from "../assets/SVG/logoWhite.svg";
 import { Link } from "react-router";
 
 export const NavNoBanner = () => {
@@ -23,7 +23,9 @@ export const NavNoBanner = () => {
               Virksomheder
             </Link>
           </div>
-          <div className="nav-anchor">Blog</div>
+          <div className="nav-anchor">
+            <Link to="/Blogs">Blogs</Link>
+          </div>
           <div className="nav-anchor">Kontakt</div>
           <div className="nav-anchor">
             Online

@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./sections/Home";
 import SoMe from "./sections/SoMe";
 import Workshop from "./sections/Workshop";
+import Blogs from "./sections/Blogs";
 import { createBrowserRouter, RouterProvider } from "react-router";
 
 import { gsap } from "gsap";
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/Workshop",
     element: <Workshop />,
+  },
+  {
+    path: "/Blogs",
+    element: <Blogs />,
   },
 ]);
 

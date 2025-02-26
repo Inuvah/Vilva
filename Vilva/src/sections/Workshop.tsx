@@ -16,7 +16,7 @@ export const Workshop = () => {
         <div className="workshop-s1-circle s1-circle-2"></div>
         <div className="workshop-s1-text flex-a-center">
           <div className="workshop-s1-text-wrapper">
-            <p>
+            <p className="p-blue">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at
               rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam,
               sit amet suscipit orci auctor in.
@@ -57,7 +57,7 @@ export const Workshop = () => {
           <div className="workshop-s2-text-wrapper flex-j-left">
             <div className="workshop-s2-text flex-c-center">
               <h2>Content creation</h2>
-              <p>
+              <p className="p-blue">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
                 at rutrum nibh, quis fringilla sapien. Mauris convallis ligula
                 diam, sit amet suscipit orci auctor in. Vivamus varius, turpis
@@ -73,7 +73,7 @@ export const Workshop = () => {
           <div className="workshop-s2-text-wrapper">
             <div className="workshop-s2-text">
               <h2>Content creation</h2>
-              <p>
+              <p className="p-blue">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
                 at rutrum nibh, quis fringilla sapien. Mauris convallis ligula
                 diam, sit amet suscipit orci auctor in. Vivamus varius, turpis
@@ -95,7 +95,7 @@ export const Workshop = () => {
       <section className="workshop-s3">
         <div className="workshop-s3-text">
           <h2>Header</h2>
-          <p>
+          <p className="p-blue">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at
             rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam,
             sit amet suscipit orci auctor in. Vivamus varius, turpis cursus

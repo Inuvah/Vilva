@@ -259,5 +259,31 @@
             "name": "Story",
             "id": 37
         }
+    ],
+    "blogsPage":[
+        {
+            "img": "../assets/627A5750-Enhanced-NR.jpg",
+            "title": "Tips og tricks",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam, sit amet suscipit orci auctor in. ",
+            "link": "#"
+        },
+        {
+            "img": "../assets/627A5750-Enhanced-NR.jpg",
+            "title": "Tips og tricks",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam, sit amet suscipit orci auctor in. ",
+            "link": "#"
+        },
+        {
+            "img": "../assets/627A5750-Enhanced-NR.jpg",
+            "title": "Tips og tricks",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam, sit amet suscipit orci auctor in. ",
+            "link": "#"
+        },
+        {
+            "img": "../assets/627A5750-Enhanced-NR.jpg",
+            "title": "Tips og tricks",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam, sit amet suscipit orci auctor in. ",
+            "link": "#"
+        }
     ]
 }

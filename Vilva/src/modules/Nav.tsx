@@ -12,7 +12,7 @@ export const Nav = () => {
           <div className="nav-slider"></div>
           <div className="nav-anchor">
             <Link to="/" className="nav-link">
-              <img src={logo} alt="logo" />
+              <img src={logoWhite} alt="logo" />
             </Link>
           </div>
           <div className="nav-anchor">
@@ -25,7 +25,9 @@ export const Nav = () => {
               Virksomheder
             </Link>
           </div>
-          <div className="nav-anchor">Blog</div>
+          <div className="nav-anchor">
+            <Link to="/Blogs">Blogs</Link>
+          </div>
           <div className="nav-anchor">Kontakt</div>
           <div className="nav-anchor">
             Online

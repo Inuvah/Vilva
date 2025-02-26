@@ -27,8 +27,8 @@ function bannerGraphics() {
         style={{
           left: banner.x / (1920 / windowWidth) + "px",
           top: banner.y / (911 / windowHeight) + "px",
-          width: banner.size + "px",
-          height: banner.size + "px",
+          width: banner.size / (1920 / windowWidth) + "px",
+          height: banner.size / (1920 / windowWidth) + "px",
         }}
       >
         <h2 className="SoMe-circles-h">{banner.name}</h2>
@@ -75,8 +75,8 @@ export const SoMe = () => {
 
       <section className="SoMe-s2 flex-center">
         <div className="flex-center flex-col SoMe-s2-cta">
-          <h2>Header</h2>
-          <p>
+          <h2 className="h2-white">Header</h2>
+          <p className="p-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at
             rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam,
             sit amet suscipit orci auctor in.
