@@ -8,17 +8,17 @@
             "id": 1
         },
         {
-            "x": 445,
-            "y": 218,
-            "size": 43,
-            "name": "SMM",
+            "x": 284,
+            "y": 507,
+            "size": 120,
+            "name": "Interaktion",
             "id": 2
         },
         {
-            "x": 569,
-            "y": 232,
+            "x": 860,
+            "y": 157,
             "size": 100,
-            "name": "Influencer",
+            "name": "Audience",
             "id": 3
         },
         {
@@ -36,17 +36,17 @@
             "id": 5
         },
         {
-            "x": 110,
-            "y": 428,
+            "x": 1454,
+            "y": 759,
             "size": 100,
-            "name": "Målgruppe",
+            "name": "Instagram",
             "id": 6
         },
         {
-            "x": 284,
-            "y": 507,
-            "size": 120,
-            "name": "Interaktion",
+            "x": 445,
+            "y": 218,
+            "size": 43,
+            "name": "SMM",
             "id": 7
         },
         {
@@ -141,10 +141,10 @@
             "id": 20
         },
         {
-            "x": 1454,
-            "y": 759,
+            "x": 110,
+            "y": 428,
             "size": 100,
-            "name": "Instagram",
+            "name": "Målgruppe",
             "id": 21
         },
         {
@@ -232,10 +232,10 @@
             "id": 33
         },
         {
-            "x": 860,
-            "y": 157,
+            "x": 569,
+            "y": 232,
             "size": 100,
-            "name": "Audience",
+            "name": "Influencer",
             "id": 34
         },
         {

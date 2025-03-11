@@ -230,8 +230,7 @@
     width: 20rem;
     z-index: 0;
     height: 20rem;	
-    transition: 0.5s;
-    
+    transform: scale(0);
 }
 .SoMe-circles-h {
     color: var(--accentLighter);
@@ -404,7 +403,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding-top: 50vh;
+    padding-top: 40vh;
     width: 80%;
     margin-left: 10%;
     flex-wrap: wrap;
@@ -454,8 +453,10 @@
 .blog-search {
     background-color: var(--accentLightest);
     position: absolute;
+    margin: 0 0.5rem 0 0.5rem;
     top: 6.5rem;
-    width: 37%;
+    max-width: 37%;
+    min-width: 37%;
     border: 5px solid var(--accentLighter);
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
@@ -474,10 +475,10 @@
     border: 2px solid white;
 }
 .blog-input {
-    width: 6rem;
+    width: 11.25%;
 }
 .blog-input-search {
-    width: 10rem;
+    width: 22.5%;
 }
 .blog-header {
     position: absolute;

@@ -150,7 +150,8 @@ nav {
         margin-top: -10rem;
     }
     .navbar {
-        width: 42%;
+        min-width: 42%;
+        max-width: 90%;
         margin-top: 0.5rem;
         position: absolute;
         display: flex;
@@ -174,13 +175,16 @@ nav {
         }
         .nav-anchor {
             border: none;
-            text-align: center;
+            width: 100%/7;
             margin: 1rem 1.5rem 1rem 1.5rem;
             display: inline;
             text-decoration: none;
             color: var(--accent);
             z-index: 1;
             transition: 0.2s;
+        }
+        .nav-link {
+            text-align: center;
         }
         .nav-link:hover {
             color: var(--accentLighter);

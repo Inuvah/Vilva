@@ -34,6 +34,31 @@ export const NavNoBanner = () => {
           </div>
           <div className="nav-anchor">Iværksætteri</div>
         </div>
+        <div className="blog-search-wrapper flex-center">
+          <div className="blog-search flex-center">
+            <input
+              className="blog-input input-style"
+              value="Emne"
+              type="text"
+            />
+            <input
+              className="blog-input input-style"
+              value="Sorter"
+              type="text"
+            />
+            <input
+              className="blog-input-search input-style"
+              value="Search"
+              type="text"
+            />
+            <input
+              className="blog-input input-style"
+              value="Dato"
+              type="text"
+            />
+            <input className="blog-input input-style" value="Ryd" type="text" />
+          </div>
+        </div>
       </nav>
     </>
   );

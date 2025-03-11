@@ -12,7 +12,7 @@ export const Nav = () => {
           <div className="nav-sliderBlue"></div>
           <div className="nav-anchorBlue">
             <Link to="/">
-              <img src={logo} alt="logo" className="nav-link" />
+              <img src={logoWhite} alt="logo" className="nav-link" />
             </Link>
           </div>
           <div className="nav-anchorBlue">
@@ -25,13 +25,13 @@ export const Nav = () => {
               Virksomheder
             </Link>
           </div>
-          <div className="nav-anchorBlue">Blog</div>
-          <div className="nav-anchorBlue">Kontakt</div>
           <div className="nav-anchorBlue">
-            Online
-            <br />
-            Kurser
+            <Link to="/Blogs" className="nav-link">
+              Blogs
+            </Link>
           </div>
+          <div className="nav-anchorBlue">Kontakt</div>
+          <div className="nav-anchorBlue">about</div>
           <div className="nav-anchorBlue">Iværksætteri</div>
         </div>
         <img src={banner} alt="banner" className="banner" />

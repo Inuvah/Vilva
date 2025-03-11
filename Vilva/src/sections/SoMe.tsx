@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { createElement } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Key } from "react";
+import { useGSAP } from "@gsap/react";
 import NavNoBanner from "../modules/NavNoBanner";
 import Footer from "../modules/Footer";
 import s3Img from "../assets/627A5735-Enhanced-NR.jpg";
@@ -17,13 +20,28 @@ interface Banner {
   name: string;
 }
 
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 function bannerGraphics() {
   console.log(windowHeight, windowWidth);
   return bannerGraphicArray.bannerGraphic.map((banner: Banner) => {
+    useGSAP(() => {
+      var bannerTl = gsap.timeline({ repeat: 0 });
+      bannerTl.to(
+        ".SoMe-circle" + banner.id,
+        {
+          duration: 0.3,
+          scaleX: 1,
+          scaleY: 1,
+          ease: "power1.inOut",
+        },
+        "0" + banner.id
+      );
+    });
     return (
       <div
         key={banner.id}
-        className="SoMe-circles"
+        className={"SoMe-circles SoMe-circle" + banner.id}
         style={{
           left: banner.x / (1920 / windowWidth) + "px",
           top: banner.y / (911 / windowHeight) + "px",
