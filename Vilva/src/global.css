@@ -52,7 +52,7 @@ h3 {
 }
 p {
     font-family: "quicksand";
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 1rem, 2rem);
     line-height: 1.5rem;
     color: var(--accent);
 }
@@ -193,11 +193,11 @@ nav {
     .banner-logo {
         position: absolute;
         flex-direction: column;
-        bottom: 16rem;
+        bottom: min(16rem, 13%);
         left: 10rem;
         color: var(--offWhite);
-        height: 25rem;
-        width: 25rem;
+        height: min(25rem, 25vw);
+        width: min(25rem, 25vw);
         background-color: var(--accentLighterOp50);
         border-radius: 200px;
         border: 3px solid var(--offWhite);
@@ -348,11 +348,11 @@ nav {
     .banner-logoBlue {
         position: absolute;
         flex-direction: column;
-        bottom: 10rem;
-        left: 15rem;
+        bottom: min(16rem, 13%);
+        left: 10rem;
         color: var(--offWhite);
-        height: 25rem;
-        width: 25rem;
+        height: min(25rem, 25vw);
+        width: min(25rem, 25vw);
         background-color: var(--softBlueOp50);
         border-radius: 200px;
         border: 3px solid var(--offWhite);

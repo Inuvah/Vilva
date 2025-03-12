@@ -33,7 +33,7 @@ function bannerGraphics() {
           duration: 0.3,
           scaleX: 1,
           scaleY: 1,
-          ease: "power1.inOut",
+          ease: "power1.out",
         },
         "0" + banner.id
       );

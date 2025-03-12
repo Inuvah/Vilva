@@ -1,4 +1,9 @@
 import React from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Key } from "react";
+import { useGSAP } from "@gsap/react";
+//
 import logo from "../assets/SVG/logoBlack.svg";
 import linkedin from "../assets/linkedin.png";
 import facebook from "../assets/facebook.png";
@@ -10,12 +15,42 @@ import banner from "../assets/627A5708-Enhanced-NR.jpg";
 import logoWhite from "../assets/SVG/logoWhite.svg";
 import Footer from "../modules/Footer";
 
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+const arr = [1, 2, 3, 4];
+
 export const Home = () => {
+  useGSAP(() => {
+    gsap.to(".s1-circle", {
+      rotation: "-=25",
+      ease: "inOut",
+      scrollTrigger: {
+        trigger: ".s1-text",
+        start: "top center",
+        end: "90% center",
+        scrub: true,
+        markers: true,
+      },
+    });
+
+    let tl = gsap.timeline({});
+    arr.forEach((num) => {
+      tl.from(".h-p-" + num, {
+        duration: 0.5,
+        y: +800,
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: ".s2",
+          start: "top center",
+          end: "90% center",
+          scrub: true,
+        },
+      });
+    });
+  });
   return (
     <>
       <div className="offwhite">
         <Nav />
-
         <section>
           <div className="h-s1-wrapper flex-a-center">
             <div className="s1-text-wrapper flex-a-center">
@@ -62,7 +97,7 @@ export const Home = () => {
               </div>
             </div>
             <div className="s1-img flex-j-center">
-              <img src={s1Img} alt="eye candy" />
+              <img src={s1Img} alt="billede af Lone" />
             </div>
           </div>
         </section>
@@ -79,52 +114,34 @@ export const Home = () => {
           <div className="h-s2-circle5 h-s2-circles"></div>
           <div className="h-s2-circle6 h-s2-circles"></div>
           <div className="home-products flex-center">
-            <div className="arrow-left"></div>
-            <div className="home-product flex-center">
+            <div className="home-product h-p-1 flex-center">
               <div className="product-text">
                 <h3>produkt</h3>
                 <p>Duis in mi porta, laoreet sapien ut, dignissim</p>
               </div>
               <button className="button">Se mere</button>
             </div>
-            <div className="home-product flex-center">
+            <div className="home-product h-p-2 flex-center">
               <div className="product-text">
                 <h3>produkt</h3>
                 <p>Duis in mi porta, laoreet sapien ut, dignissim</p>
               </div>
               <button className="button">Se mere</button>
             </div>
-            <div className="home-product flex-center">
+            <div className="home-product h-p-3 flex-center">
               <div className="product-text">
                 <h3>produkt</h3>
                 <p>Duis in mi porta, laoreet sapien ut, dignissim</p>
               </div>
               <button className="button">Se mere</button>
             </div>
-            <div className="home-product flex-center">
+            <div className="home-product h-p-4 flex-center">
               <div className="product-text">
                 <h3>produkt</h3>
                 <p>Duis in mi porta, laoreet sapien ut, dignissim</p>
               </div>
               <button className="button">Se mere</button>
             </div>
-            <div className="arrow-right"></div>
-          </div>
-        </section>
-
-        <section className="s3 flex-center">
-          <div className="s3-wrapper flex-center-col">
-            <h3>
-              <span>GRATIS</span> intro online kursus
-            </h3>
-            <p>
-              Meld dig til vores nyheds brev og modtag
-              <br />
-              en introduktion til Vilva's online kursus.
-            </p>
-
-            <button className="button">Navn</button>
-            <button className="button">E-mail</button>
           </div>
         </section>
         <Footer />
