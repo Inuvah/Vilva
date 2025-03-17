@@ -102,7 +102,7 @@ export const SoMe = () => {
           <button>Se mere</button>
         </div>
       </section>
-
+      <div className="wave-container wave-top"></div>
       <section className="SoMe-s3 flex-center wave-container">
         <div className="SoMe-s3-img-wrapper">
           <div className="SoMe-s3-img">
