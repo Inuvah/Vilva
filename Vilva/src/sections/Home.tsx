@@ -91,7 +91,9 @@ export const Home = () => {
                     </p>
                   </div>
                   <div className="s1-circle flex-center">
-                    <h3>"Lorem ipsum luctus lacinia est. Sed fermentum. "</h3>
+                    <h3 className="pin-script">
+                      "Quote fra Lone som er meget dyb "
+                    </h3>
                   </div>
                 </div>
               </div>

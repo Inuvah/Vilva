@@ -33,6 +33,15 @@ div#root, body, html {
     font-family: "calistoga";
     src: url(./assets/fonts/Calistoga-Regular.ttf) format('truetype');
 }
+@font-face {
+    font-family: "pin-script";
+    src: url(./assets/fonts/PinyonScript-Regular.ttf) format('truetype');
+}
+.pin-script {
+    font-family: "pin-script";
+    font-size: 2.5rem;
+    margin: 1rem;
+}
 h1 {
     font-family: "tan-mon-cheri";
     font-size: 6rem;

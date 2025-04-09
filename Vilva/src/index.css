@@ -209,17 +209,15 @@
     text-align: center;
 }
 .SoMe-s3 {
+    overflow: hidden;
 }
 .SoMe-s3-img-wrapper {
     width: 60%;
 }
 .SoMe-s3-img {
     img {
-        width: 40%;
-        margin-left: 25%;
-        border-top-left-radius: 200px;
-        border-top-right-radius: 200px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        width: 50vw;
+        margin-left: 5vw;
     }
 }
 .SoMe-s3-text {

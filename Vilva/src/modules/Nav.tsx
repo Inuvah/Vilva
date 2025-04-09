@@ -1,8 +1,15 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import { Link } from "react-router";
 import logo from "../assets/SVG/logoBlack.svg";
 import banner from "../assets/627A5708-Enhanced-NR.jpg";
 import logoWhite from "../assets/SVG/logoWhite.svg";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Nav = () => {
   return (
@@ -47,7 +54,7 @@ export const Nav = () => {
           </p>
         </div>
         <div className="banner-logo flex-center">
-          <img src={logoWhite} alt="logo white" />
+          <img src={logoWhite} alt="logo white" className="footerLogo" />
           <p>Fotograf. Visuel Branding. Webdesign</p>
         </div>
       </nav>

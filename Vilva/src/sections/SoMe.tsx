@@ -6,7 +6,7 @@ import { Key } from "react";
 import { useGSAP } from "@gsap/react";
 import NavNoBanner from "../modules/NavNoBanner";
 import Footer from "../modules/Footer";
-import s3Img from "../assets/627A5735-Enhanced-NR.jpg";
+import s3Img from "../assets/gifs/Comp 1.gif";
 import s2Img from "../assets/627A5760-Enhanced-NR.jpg";
 import bannerGraphicArray from "../arrays/soMe.json";
 const windowWidth = window.innerWidth;
