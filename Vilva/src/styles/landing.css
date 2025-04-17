@@ -1,0 +1,199 @@
+:root {
+  --beige: #F7F4ED;
+  --cardBlue: rgba(73, 81, 100, 0.9);
+  --cardBeige: rgba(202, 182, 161, 0.9);
+  --cardGreen: rgba(153, 148, 132, 0.9);
+}
+.landing-sec-one-wrapper {
+    background-color: var(--beige);
+}
+.landing-sec-one {
+    display: flex;
+    margin: 0 10vw 0 10vw;
+    background-color: var(--beige);
+    img {
+        width: 45vw;
+        height: auto;
+    }
+}
+.landing-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.landing-p {
+    font-family: 'Muli', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: -5vh;
+}
+
+.landing-h1 {
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    line-height: 1.1em;
+}
+
+.landing-p-content {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7em;
+    font-weight: 500;
+    width: 80%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.landing-sec-two {
+    width: 60vw;
+    img {
+        width: 25vw;
+    }
+}
+.landing-sec-two-img-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+.landing-text-wrapper-two {
+    margin-top: 20vh;
+    width: 40%;
+    margin-left: 5vw;
+    h2 {
+        font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+    h3 {
+        line-height: 2.2rem;
+        font-family: Open Sans, Arial, sans-serif;
+        color: #666;
+        background-color: #fff;
+        font-weight: 500;
+        -webkit-font-smoothing: antialiased;
+    }
+    p{
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        color: #666;
+        background-color: #fff;
+        line-height: 1.7em;
+        font-weight: 500;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+.l-h2 {
+    font-family: "calistoga";
+    font-size: 3rem;
+    color: var(--darkBlue);
+    
+}
+
+.landing-sec-three {
+    margin-top: 10vh;
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        width: 40%;
+        margin-top: 2rem;
+    }
+}
+.l-card-color-blue {
+    background-color: var(--cardBlue);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.l-card-color-beige {
+    background-color: var(--cardBeige);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.l-card-color-green {
+    background-color: var(--cardGreen);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.l-card {
+    background-image: url(../assets/landing/paper-texture.jpg);
+    min-width: 200px;
+    max-width: 15vw;
+    height: 40vh;
+    margin: 0.5rem;
+    h3 {
+        text-align: center;
+        color: white;
+        font-family: 'Nanum Myeongjo', Georgia, "Times New Roman", serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #FFFFFF !important;
+        line-height: 1.4em;
+    }
+    p {
+        width: 80%;
+        text-align: center;
+        color: white;
+    }
+}
+.landing-sec-four {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 5vw;
+        border-radius: 100px;
+    }
+    h3,h4,h5,p {
+        text-align: center;
+        width: 50%;
+        line-height: 2rem;
+    }
+}
+.l-4-text-wrapper {
+    background-image: url(../assets/landing/personal_stylist_29.png);
+    background-repeat: repeat;
+    width: 50%;
+
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+}
+.l-f {
+    width: 100vw;
+    background-color: var(--beige);
+    margin: 0;
+    height: 30vh;
+    align-items: flex-start;
+    img {
+        width: 32px;
+    }
+}
+.l-f-wrapper {
+    width: 100%;
+    p,a,h5 {
+        text-align: center;
+    }
+}
+.l-f-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l-f-link {
+    margin: 0 100% 0 0;
+}
