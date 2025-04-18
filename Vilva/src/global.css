@@ -16,6 +16,7 @@
 }
 div#root, body, html {
     overflow-x: hidden;
+    overflow-x: initial;
 }
 @font-face {
     font-family: "quicksand";

@@ -4,15 +4,25 @@
   --cardBeige: rgba(202, 182, 161, 0.9);
   --cardGreen: rgba(153, 148, 132, 0.9);
 }
+div#root, body, html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-x: initial;
+}
 .landing-sec-one-wrapper {
     background-color: var(--beige);
+    width: 100%;
+    margin-top: 10vh;
 }
 .landing-sec-one {
+    max-width: 80vw;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 10vw 0 10vw;
     background-color: var(--beige);
     img {
-        width: 45vw;
+        max-width: 35vw;
+        min-width: 300px;
         height: auto;
     }
 }
@@ -24,7 +34,6 @@
 }
 
 .landing-p {
-    font-family: 'Muli', sans-serif;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 4px;
@@ -32,26 +41,22 @@
 }
 
 .landing-h1 {
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 200;
-    font-size: 6vw;
+    font-size: clamp(24px,48px, 4vw);
     line-height: 1.1em;
 }
 
 .landing-p-content {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 14px;
     color: #666;
     line-height: 1.7em;
-    font-weight: 500;
     width: 80%;
     -webkit-font-smoothing: antialiased;
 }
-
 .landing-sec-two {
-    width: 60vw;
+    max-width: 60vw;
+    min-width: 200px;
     img {
-        width: 25vw;
+        max-width: 25vw;
+        min-width: 300px;
     }
 }
 .landing-sec-two-img-wrapper {
@@ -62,33 +67,28 @@
 }
 .landing-text-wrapper-two {
     margin-top: 20vh;
-    width: 40%;
+    max-width: 40%;
+    min-width: 300px;
     margin-left: 5vw;
     h2 {
-        font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
-        font-weight: 300;
         line-height: 1.4em;
+        font-size: clamp(24px,48px, 4vw);
     }
     h3 {
         line-height: 2.2rem;
-        font-family: Open Sans, Arial, sans-serif;
         color: #666;
         background-color: #fff;
-        font-weight: 500;
         -webkit-font-smoothing: antialiased;
     }
     p{
-        font-family: 'Open Sans', Arial, sans-serif;
         font-size: 14px;
         color: #666;
         background-color: #fff;
         line-height: 1.7em;
-        font-weight: 500;
         -webkit-font-smoothing: antialiased;
     }
 }
 .l-h2 {
-    font-family: "calistoga";
     font-size: 3rem;
     color: var(--darkBlue);
     
@@ -128,15 +128,13 @@
 }
 .l-card {
     background-image: url(../assets/landing/paper-texture.jpg);
-    min-width: 200px;
+    min-width: 250px;
     max-width: 15vw;
     height: 40vh;
     margin: 0.5rem;
     h3 {
         text-align: center;
         color: white;
-        font-family: 'Nanum Myeongjo', Georgia, "Times New Roman", serif;
-        font-weight: 500;
         text-transform: uppercase;
         font-size: 24px;
         color: #FFFFFF !important;
@@ -155,22 +153,29 @@
     justify-content: center;
     align-items: center;
     img {
-        width: 5vw;
+        max-width: 5vw;
+        min-width: 75px;
         border-radius: 100px;
+    }
+    h4 {
+        font-size: clamp(24px,48px, 4vw);
     }
     h3,h4,h5,p {
         text-align: center;
-        width: 50%;
+        max-width: 50%;
+        min-width: 90%;
         line-height: 2rem;
+    }
+    h5 {
+        line-height: 5rem;
+        font-size: clamp(18px,44px, 4vw);
     }
 }
 .l-4-text-wrapper {
     background-image: url(../assets/landing/personal_stylist_29.png);
     background-repeat: repeat;
-    width: 50%;
-
-    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 200;
+    max-width: 50%;
+    min-width: 90%;
     font-size: 48px;
 }
 .l-f {
@@ -184,16 +189,53 @@
     }
 }
 .l-f-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     p,a,h5 {
         text-align: center;
     }
 }
 .l-f-links {
+    max-width: 700px;
+    min-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .l-f-link {
-    margin: 0 100% 0 0;
+    margin-right: 10rem;
+}
+/*RESPONSIVENESS*/
+@media screen and (max-width: 1540px) {
+    .landing-sec-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 0;
+    }
+    .landing-p,.landing-h1,.landing-p-content {
+        text-align: left;
+    }
+   .landing-text-wrapper {
+    justify-content: center;
+    align-items: left;
+   }
+   .landing-sec-two {
+    margin-top: 20vh;
+   }
+   .landing-text-wrapper-two {
+    margin-top: 5vh;
+   }
+   .l-f-link {
+    margin-right: 0.5rem;
+   }
+}
+
+@media screen and (max-width: 880px) { 
+    .l-card {
+        height: auto;
+       }
 }
