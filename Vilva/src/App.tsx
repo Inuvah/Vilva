@@ -4,7 +4,9 @@ import SoMe from "./sections/SoMe";
 import Workshop from "./sections/Workshop";
 import Blogs from "./sections/Blogs";
 import Landing from "./sections/Landing";
+import Login from "./sections/Login";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -17,9 +19,15 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { TextPlugin } from "gsap/TextPlugin";
 
+const queryClient = new QueryClient();
+
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Landing />,
+  },
+  {
+    path: "/Home",
     element: <Home />,
   },
   {
@@ -36,8 +44,8 @@ const router = createBrowserRouter([
     element: <Blogs />,
   },
   {
-    path: "/Landing",
-    element: <Landing />,
+    path: "/Login",
+    element: <Login />,
   },
 ]);
 
@@ -54,7 +62,9 @@ gsap.registerPlugin(
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
     </>
   );
 }

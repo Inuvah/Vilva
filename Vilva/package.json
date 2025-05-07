@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "tsc && vite build --base=./",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve-json": "json-server --watch src/db/db.json --port 4000"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@tanstack/react-query": "^5.75.5",
     "f": "^1.4.0",
+    "json-server": "^1.0.0-beta.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.2.0"

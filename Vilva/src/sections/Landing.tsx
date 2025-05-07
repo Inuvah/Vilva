@@ -3,6 +3,7 @@ import secOneImg from "../assets/landing/627A1924-Enhanced-NR-scaled.jpg";
 import secTwoImg from "../assets/landing/627A8637-Enhanced-NR-1-2048x1491.jpg";
 import cardWhite from "../assets/landing/attorney-1.png";
 import cardBlack from "../assets/landing/attorney-2.png";
+import logo from "../assets/logo.svg";
 import windowImg from "../assets/landing/627A1924-Enhanced-NR-small.jpg";
 import phoneIcon from "../assets/landing/smartphone-call.png";
 import mailIcon from "../assets/landing/email.png";
@@ -79,7 +80,9 @@ export const Landing = () => {
   }, []);
   return (
     <>
-      <nav></nav>
+      <nav className="flex-center">
+        <img src={logo} alt="logo" />
+      </nav>
       <div className="flex-center landing-sec-one-wrapper">
         <div className="landing-sec-one">
           <div className="landing-text-wrapper">
@@ -232,7 +235,7 @@ export const Landing = () => {
               <p className="playfair-display">Email</p>
               <a href="mailto:Lone@vilva.dk">Lone@vilva.dk</a>
             </div>
-            <div className="flex-center-col">
+            <div className="flex-center-col l-f-w">
               <img src={phoneIcon} alt="Phone icon" />
               <p className="playfair-display">Telefon</p>
               <a href="tel:+4542679011">42679011</a>
