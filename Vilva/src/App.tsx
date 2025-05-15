@@ -1,3 +1,4 @@
+//Pages
 import "./App.css";
 import Home from "./sections/Home";
 import SoMe from "./sections/SoMe";
@@ -5,8 +6,12 @@ import Workshop from "./sections/Workshop";
 import Blogs from "./sections/Blogs";
 import Landing from "./sections/Landing";
 import Login from "./sections/Login";
+import Dashboard from "./sections/Dashboard";
+
+//dependencies
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -47,6 +52,10 @@ const router = createBrowserRouter([
     path: "/Login",
     element: <Login />,
   },
+  {
+    path: "/Dashboard",
+    element: <Dashboard />,
+  },
 ]);
 
 gsap.registerPlugin(
@@ -64,6 +73,7 @@ function App() {
     <>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
+        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </>
   );

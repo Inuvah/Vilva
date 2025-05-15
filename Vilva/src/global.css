@@ -10,6 +10,7 @@
     --accentOp50: rgba(194, 150, 120, 0.5);
     --accentLightest: #F5EFE7;
     --newsPaper50Op: rgba(223, 197, 162, 0.5);
+    --red: #C28078;
 }
 .offwhite {
     background-color: var(--accentLightest);
@@ -83,6 +84,7 @@ a {
     text-decoration: none;
     color: var(--accent);
 }
+
 input, button, a {
     font-family: "quicksand";
 }

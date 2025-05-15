@@ -418,8 +418,7 @@
     margin-bottom: 25vh;
     height: 100vh
 }
-.blog-search-wrapper {
-}
+
 .blog-search {
     background-color: var(--accentLightest);
     position: absolute;
@@ -516,3 +515,104 @@
     bottom: 10vh;
     left: 5vw;
 }
+/*---------------------------------------------------DASHBOARD*/ 
+
+      .dash-logo {
+        height: 13vh;
+        width: 100vw;
+        margin-top: 2vh;
+        img {
+            width: 128px;
+            object-fit: contain;
+        }
+      }
+      .dash-container {
+        display: flex;
+        background-color: var(--accent);
+        width: 60vw;
+        height: 75vh;
+        margin-left: 20vw;
+        border-radius: 20px;
+        border: 3px solid white;
+      }
+      .dash-nav {
+        margin: -3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 10vw;
+        height: 50vh;
+        background-color: var(--accent);
+        border-radius: 20px;
+        border: 3px solid white;
+      }
+      .dash-user {
+        width: 128px;
+        margin: 2rem;
+      }
+
+      .dash-nav-links {
+        margin: -3px;
+        width: 10vw;
+        height: 30vh;
+        background-color: var(--accentLighter);
+        border-radius: 20px;
+        border: 3px solid white;
+      }
+      .dash-nav-link {
+        color: white;
+        text-align: center;
+        line-height: 2rem;
+      }
+      .dash-link-top {
+        margin-top: 2rem;
+      }
+      .dash-banner {
+        margin: -3px -3px 0 0;
+        background-image: url(./assets/627A1927-Enhanced-NR.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50vw;
+        height: 50vh;
+        border-radius: 20px;
+        border: 3px solid white;
+      }
+
+      .dash-course-wrapper {
+        margin: -3px;
+        width: 60vw;
+        height: 25vh;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        border: 3px solid white;
+        h3 {
+            color: var(--offWhite);
+            margin-left: 2rem;
+        }
+      }
+
+    .dash-earlier {
+        margin: -3px;
+        background-color: var(--darkBlue);
+        width: 35vw;
+        height: 25vh;
+        border-radius: 20px;
+        border: 3px solid white;
+    }
+    .dash-test {
+        margin: -3px 0 -3px 0;
+        background-color: var(--red);
+        height: 25vh;
+        width: 20vw;
+        border-radius: 20px;
+        border: 3px solid white;
+    }
+    .dash-workshop {
+        margin: -3px;
+        background-color: var(--softBlue);
+        width: 35vw;
+        height: 25vh;
+        border-radius: 20px;
+        border: 3px solid white;
+    }

@@ -14,7 +14,7 @@ div#root, body, html {
 nav {
     border: none;
     margin-top: 2rem;
-    img {
+    .landing-logo {
         max-width: 128px;
         min-width: 64px;
     }

@@ -1,14 +1,19 @@
 {
-    "users": [
-        {
-        "id": 1,
-        "name": "John Doe",
-        "email": "john@gmail.com"
-        },
-        {
-        "id": 2,
-        "name": "Jane Smith",
-        "email": "jane@gmail.com"
-        }
-        ]
+  "users": [
+    {
+      "id": "851d",
+      "email": "oliverpetersenmandalia@gmail.com",
+      "password": "oliv4292007007"
+    },
+    {
+      "id": "33b2",
+      "email": "lone@vilva.dk",
+      "password": "asdasdsadsad"
+    },
+    {
+      "id": "8fc8",
+      "email": "oliverpetersen_499@hotmail.com",
+      "password": "12345678"
+    }
+  ]
 }

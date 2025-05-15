@@ -81,7 +81,7 @@ export const Landing = () => {
   return (
     <>
       <nav className="flex-center">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="landing-logo" />
       </nav>
       <div className="flex-center landing-sec-one-wrapper">
         <div className="landing-sec-one">
