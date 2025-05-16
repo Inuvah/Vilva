@@ -616,3 +616,56 @@
         border-radius: 20px;
         border: 3px solid white;
     }
+
+    /*---------------------------------------------------KURSER*/
+
+    .kurser-logo {
+        margin: 2vh 0 2vh 0;
+        img {
+            width: 128px;
+        }
+    }
+
+    .kurser-banner-container {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+    }
+    .kurser-banner-right {
+        width: 50vw;
+        background-image: url(./assets/627A5714-Enhanced-NR.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+
+    }
+    .kurser-banner-center {
+        position: absolute;
+        text-align: center;
+        top: -5vh;
+        left: 32vw;
+        width: 70vh;
+        height: 70vh;
+        background-color: var(--accentLighter);
+        border-radius: 1000px;
+        h2 {
+            color: var(--offWhite);
+            margin-top: 10vh;
+            letter-spacing: 1rem;
+            font-weight: 100;
+        }
+
+    }
+    .kurser-banner-left {
+        width: 50vw;
+        background-image: url(./assets/627A5708-Enhanced-NR.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        transform: scale(-1, 1);
+    }
+
+    /*Background decorations*/
+    

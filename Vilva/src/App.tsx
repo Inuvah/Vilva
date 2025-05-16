@@ -7,6 +7,7 @@ import Blogs from "./sections/Blogs";
 import Landing from "./sections/Landing";
 import Login from "./sections/Login";
 import Dashboard from "./sections/Dashboard";
+import Kurser from "./sections/Kurser";
 
 //dependencies
 import { createBrowserRouter, RouterProvider } from "react-router";
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: "/Dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/Kurser",
+    element: <Kurser />,
   },
 ]);
 
