@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.svg";
+import db from "../db/db.json";
 //Background decorations
 import bottomCirlce from "../assets/SVG/kurser/bottomCircle.svg";
 import centerCircle from "../assets/SVG/kurser/centerCircle.svg";

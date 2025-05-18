@@ -668,4 +668,32 @@
     }
 
     /*Background decorations*/
-    
+    .kurser-decor {
+        position: relative;
+        height: 130vh;
+        overflow: hidden;
+    }
+
+    .kurser-decor-top-cir {
+        position: absolute;
+        top: -10vh;
+        right: 0;
+    }
+
+    .kurser-decor-bot-cir {
+        position: absolute;
+        bottom: 0vh;
+        left: 0;
+    }
+
+    .kurser-decor-lef-spi {
+        position: absolute;
+        top: 40vh;
+        left: 2.5vw;
+    }
+
+    .kurser-decor-rig-spi {
+        position: absolute;
+        bottom: 22vh;
+        right: 2.5vw;
+    }

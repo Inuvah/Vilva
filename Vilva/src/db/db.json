@@ -14,6 +14,41 @@
       "id": "8fc8",
       "email": "oliverpetersen_499@hotmail.com",
       "password": "12345678"
+    },
+    {
+      "id": "e5e4",
+      "email": "n195656@gmail.com",
+      "password": "12345678"
+    }
+  ],
+  "kurser": [
+    {
+      "img": "../assets/627A5750-Enhanced-NR.jpg",
+      "title": "Tips og tricks",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam, sit amet suscipit orci auctor in. ",
+      "link": "#",
+      "id": "681e"
+    },
+    {
+      "img": "../assets/627A5750-Enhanced-NR.jpg",
+      "title": "Tips og tricks",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam, sit amet suscipit orci auctor in. ",
+      "link": "#",
+      "id": "bc6f"
+    },
+    {
+      "img": "../assets/627A5750-Enhanced-NR.jpg",
+      "title": "Tips og tricks",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam, sit amet suscipit orci auctor in. ",
+      "link": "#",
+      "id": "41ad"
+    },
+    {
+      "img": "../assets/627A5750-Enhanced-NR.jpg",
+      "title": "Tips og tricks",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam, sit amet suscipit orci auctor in. ",
+      "link": "#",
+      "id": "0f75"
     }
   ]
 }
