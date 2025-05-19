@@ -697,3 +697,77 @@
         bottom: 22vh;
         right: 2.5vw;
     }
+
+/*-------------------------------------------------------Login/Register*/
+.register-background {
+    background-image: url(./assets/SVG/gradientWhiteBrown.svg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.register-topCircle {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.register-bottomCircle {
+    position: absolute;
+    bottom: -1vh;
+    left: 0;
+}
+.register-topElipse {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+}
+.register-bottomElipse {
+    position: absolute;
+    bottom: 3vh;
+    right: 5vw;
+}
+.login-register-form-container {
+    position: relative;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+.register-logo {
+    width: 128px;
+}
+.login-register-top-label {
+    margin-top: 2rem;
+}
+.login-register-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    background-color: var(--accentLighterOp50);
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    label {
+        margin-left: 10%;
+        line-height: 0%;
+    }
+    button {
+        width: 60%;
+        height: 2.5rem;
+        margin-top: 1rem;
+        border-radius: 20px;
+        border: 5px solid var(--accentLighter);
+        color: var(--accentLighter);
+    }
+}
+
+.register-checkmark {
+ margin-left: 1rem;
+}
+
+.login-register-input {
+    margin-left: 10%;
+    width: 70%;
+    border-radius: 5px;
+    border: 3px solid var(--accentLighter);
+}

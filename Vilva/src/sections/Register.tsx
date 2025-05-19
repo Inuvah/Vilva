@@ -3,6 +3,16 @@ import axios from "axios";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+import logo from "../assets/SVG/logoBlack.svg";
+import checkMark from "../assets/SVG/checkMark.svg";
+import topCircle from "../assets/SVG/register/topCircle.svg";
+import bottomCircle from "../assets/SVG/register/bottomCircle.svg";
+import topElipse from "../assets/SVG/register/topElipse.svg";
+import bottomElipse from "../assets/SVG/register/bottomElipse.svg";
+
 export const Register = () => {
   //Typescript definitions
   type UserInput = {
@@ -59,50 +69,85 @@ export const Register = () => {
   //Render
   return (
     <>
-      {users.map(
-        (user: { id: React.Key | null | undefined; email: string }) => (
-          <div key={user.id}>
-            <p>{user.email}</p>
-          </div>
-        )
-      )}
       {/*Post request error handling*/}
       {mutation.isError ? (
         <div>An error occurred: {mutation.error.message}</div>
       ) : null}
 
-      <form onSubmit={handleSubmit}>
-        <label>E-mail:</label>
-        <br />
-        <input
-          type="email"
-          value={postEmail}
-          required
-          onChange={(e) => setPostEmail(e.target.value)}
-        />
-        <br />
-        <label>Password</label>
-        <br />
-        <input
-          type="password"
-          required
-          minLength={8}
-          value={postPassword}
-          onChange={(e) => setPostPassword(e.target.value)}
-        />
-        <br />
-        <label>Password again</label>
-        <br />
-        <input
-          type="password"
-          required
-          minLength={8}
-          value={passwordCheck}
-          onChange={(e) => setPasswordCheck(e.target.value)}
-        />
-        <br />
-        <button type="submit">Register</button>
-      </form>
+      <div className="register-background">
+        <div className="register-topCircle">
+          <img src={topCircle} alt="Decoration" />
+        </div>
+        <div className="register-bottomCircle">
+          <img src={bottomCircle} alt="Decoration" />
+        </div>
+        <div className="register-topElipse">
+          <img src={topElipse} alt="Decoration" />
+        </div>
+        <div className="register-bottomElipse">
+          <img src={bottomElipse} alt="Decoration" />
+        </div>
+
+        <div className="login-register-form-container flex-center-col">
+          <img src={logo} alt="logo" className="register-logo" />
+          <form onSubmit={handleSubmit} className="login-register-form">
+            <label className="login-register-top-label p-white">E-mail:</label>
+            <br />
+            <div className="flex">
+              <input
+                className="login-register-input"
+                type="email"
+                value={postEmail}
+                required
+                onChange={(e) => setPostEmail(e.target.value)}
+              />
+              <img
+                src={checkMark}
+                alt="Check Mark"
+                className="register-checkmark"
+              />
+            </div>
+            <br />
+            <label className="p-white">Password</label>
+            <br />
+            <div className="flex">
+              <input
+                className="login-register-input"
+                type="email"
+                value={postPassword}
+                required
+                onChange={(e) => setPostPassword(e.target.value)}
+              />
+              <img
+                src={checkMark}
+                alt="Check Mark"
+                className="register-checkmark"
+              />
+            </div>
+            <br />
+            <label className="p-white">Password again</label>
+            <br />
+            <div className="flex">
+              <input
+                className="login-register-input"
+                type="email"
+                value={passwordCheck}
+                required
+                onChange={(e) => setPasswordCheck(e.target.value)}
+              />
+              <img
+                src={checkMark}
+                alt="Check Mark"
+                className="register-checkmark"
+              />
+            </div>
+            <br />
+            <div className="flex-center">
+              <button type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </>
   );
 };
