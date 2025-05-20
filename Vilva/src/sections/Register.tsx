@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
+import ReactDOM from "react-dom";
+import { useEffect } from "react";
 import axios from "axios";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { useState } from "react";
@@ -12,8 +14,13 @@ import topCircle from "../assets/SVG/register/topCircle.svg";
 import bottomCircle from "../assets/SVG/register/bottomCircle.svg";
 import topElipse from "../assets/SVG/register/topElipse.svg";
 import bottomElipse from "../assets/SVG/register/bottomElipse.svg";
+import { useNavigate } from "react-router";
 
+//Initialize gsap
+gsap.registerPlugin(useGSAP);
 export const Register = () => {
+  const refContent = useRef(null);
+
   //Typescript definitions
   type UserInput = {
     email: string;
@@ -24,6 +31,33 @@ export const Register = () => {
   const [postEmail, setPostEmail] = useState("");
   const [postPassword, setPostPassword] = useState("");
   const [passwordCheck, setPasswordCheck] = useState("");
+  const navigate = useNavigate();
+
+  useGSAP(() => {
+    gsap.to(".register-topElipse", {
+      rotation: "+=720",
+      ease: "inOut",
+      duration: 120,
+    });
+    gsap.to(".register-bottomElipse", {
+      rotation: "-=720",
+      ease: "inOut",
+      duration: 120,
+    });
+  }, [postEmail]);
+
+  useGSAP(() => {
+    gsap.to(".register-bottomCircle", {
+      scale: 1.2,
+      ease: "inOut",
+      duration: 10,
+    });
+    gsap.to(".register-topCircle", {
+      scale: 1.4,
+      ease: "inOut",
+      duration: 10,
+    });
+  }, [postPassword]);
 
   //Fetch users
   const { data: users, isLoading } = useQuery({
@@ -60,6 +94,7 @@ export const Register = () => {
         email: postEmail,
         password: postPassword,
       });
+      navigate("/Login");
     }
   }
 
@@ -87,7 +122,6 @@ export const Register = () => {
         <div className="register-bottomElipse">
           <img src={bottomElipse} alt="Decoration" />
         </div>
-
         <div className="login-register-form-container flex-center-col">
           <img src={logo} alt="logo" className="register-logo" />
           <form onSubmit={handleSubmit} className="login-register-form">
@@ -113,9 +147,10 @@ export const Register = () => {
             <div className="flex">
               <input
                 className="login-register-input"
-                type="email"
+                type="password"
                 value={postPassword}
                 required
+                minLength={8}
                 onChange={(e) => setPostPassword(e.target.value)}
               />
               <img
@@ -130,9 +165,10 @@ export const Register = () => {
             <div className="flex">
               <input
                 className="login-register-input"
-                type="email"
+                type="password"
                 value={passwordCheck}
                 required
+                minLength={8}
                 onChange={(e) => setPasswordCheck(e.target.value)}
               />
               <img

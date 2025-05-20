@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 export const Login = (props: { setUserId: (arg0: any) => void }) => {
   //Typescript definitions
@@ -14,7 +15,7 @@ export const Login = (props: { setUserId: (arg0: any) => void }) => {
   const [postEmail, setPostEmail] = useState("");
   const [postPassword, setPostPassword] = useState("");
   const [userId, setUserId] = useState("");
-
+  const navigate = useNavigate();
   //Fetch users
   const { data: users } = useQuery({
     queryKey: ["users"],
@@ -37,10 +38,12 @@ export const Login = (props: { setUserId: (arg0: any) => void }) => {
     //NO REFRESH :)
     e.preventDefault();
     if (emailExists) {
-      props.setUserId(userFinder.id);
+      setUserId(userFinder.id);
       if (userFinder.password === postPassword) {
-        alert("Login successful!");
-        // Redirect to the dashboard or perform any other action
+        console.log("Logged in!");
+        localStorage.setItem("dashUserId", userId);
+        navigate("/Dashboard");
+        // Redirect to the dashboard
       } else {
         alert("Incorrect password!");
       }

@@ -42,7 +42,7 @@ gsap.registerPlugin(
 function App() {
   //Saves userId to local storage
   const [userId, setUserId] = useState("");
-
+  console.log(userId);
   const router = createBrowserRouter([
     {
       path: "/",
