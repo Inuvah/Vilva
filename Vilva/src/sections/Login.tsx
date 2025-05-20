@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { setItem } from "../utils/localStorage";
+import { usePersistedState } from "../hooks/usePersistedState";
 
 export const Login = (props: { setUserId: (arg0: any) => void }) => {
   //Typescript definitions
@@ -14,8 +16,9 @@ export const Login = (props: { setUserId: (arg0: any) => void }) => {
   //State variables for email and password
   const [postEmail, setPostEmail] = useState("");
   const [postPassword, setPostPassword] = useState("");
-  const [userId, setUserId] = useState("");
+  const [userId, setUserId] = usePersistedState("userId", "User");
   const navigate = useNavigate();
+
   //Fetch users
   const { data: users } = useQuery({
     queryKey: ["users"],
@@ -40,8 +43,6 @@ export const Login = (props: { setUserId: (arg0: any) => void }) => {
     if (emailExists) {
       setUserId(userFinder.id);
       if (userFinder.password === postPassword) {
-        console.log("Logged in!");
-        localStorage.setItem("dashUserId", userId);
         navigate("/Dashboard");
         // Redirect to the dashboard
       } else {

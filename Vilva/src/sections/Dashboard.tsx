@@ -5,23 +5,13 @@ import user from "../assets/Icons/seperatorBrown.svg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useNavigate } from "react-router";
+import { getItem } from "../utils/localStorage";
 
 gsap.registerPlugin(useGSAP);
 
 export const Dashboard = () => {
-  const [dashUserId, setDashUserId] = useState("");
+  const item = localStorage.getItem("userId");
   const navigate = useNavigate();
-  useEffect(() => {
-    const storedUserId = localStorage.getItem("dashUserId");
-    console.log("storedUserId:", storedUserId);
-    if (storedUserId !== null) {
-      setDashUserId(storedUserId);
-      console.log("userId has been set too:" + " " + dashUserId);
-    } else {
-      console.log("Could not retrive userId!");
-      navigate("/Login");
-    }
-  }, []);
 
   useGSAP(() => {
     gsap.from(".dash-earlier", {
@@ -65,7 +55,6 @@ export const Dashboard = () => {
       duration: 2,
     });
   }, []);
-  console.log(dashUserId);
   return (
     <>
       <div className="dash-body">
@@ -77,7 +66,7 @@ export const Dashboard = () => {
             <div className="flex-row">
               <div className="dash-nav flex-center">
                 <img className="dash-user" src={user} alt="Bruger Icon" />
-                <p className="dash-userTag">{dashUserId}</p>
+                <p className="dash-userTag">{item}</p>
                 <div className="dash-nav-links flex-col flex-a-center">
                   <a href="#" className="dash-nav-link dash-link-top">
                     Indstilinger
