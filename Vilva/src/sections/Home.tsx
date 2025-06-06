@@ -59,35 +59,32 @@ export const Home = () => {
                 <br />
                 <br />
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris at rutrum nibh, quis fringilla sapien. Mauris convallis
-                  ligula diam, sit amet suscipit orci auctor in. Vivamus varius,
-                  turpis cursus lacinia dapibus, augue risus finibus arcu, nec
-                  congue eros massa cursus sem. Praesent feugiat tortor non
-                  porttitor posuere. In dapibus elementum ex eget pulvinar. Duis
-                  in mi porta, laoreet sapien ut, dignissim libero. Donec
-                  gravida eros mollis aliquet sollicitudin. Donec sit amet
-                  vestibulum orci. Pellentesque augue nisl, pretium at diam sed,
-                  luctus lacinia est. Sed fermentum leo eget mattis iaculis.
-                  Vestibulum convallis sit amet nisi non lobortis. Nunc
-                  pellentesque nec ante nec commodo. Ut convallis odio quis
-                  metus consequat laoreet at at nunc. Phasellus id ipsum metus.
-                  Aenean non rutrum magna. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Mauris at rutrum nibh, quis
-                  fringilla sapien.
+                  Står du med et produkt som du ved kan sælge, men du mangler
+                  bare en måde at sælge og skabe opmærksomhed omkring produktet.
+                  Jeg kan hjælpe dig fra startlinjen og få dig med i løbet, så
+                  dit brand kan starte sin rejse.
+                  <br />
+                  <br />
+                  Alt efter hvor meget hjælp du føler du mangler, har vi flere
+                  muligheder, alt fra opbygget helt fra bunden til en guide som
+                  kan give forslag til retningen. Jeg tilbyder både hjælp til
+                  virksomheder og den individuelle, der er online kursus, som
+                  kan tilgås når man selvfølgelig vil. Workshops er også
+                  tilgængelige og er en god måde en virksomhed kan give flere
+                  medarbejdere redskaberne til f.eks SoMe.
                 </p>
                 <div className="s1-text-wrapper-circle">
                   <div className="s1-text2">
                     <p>
-                      Mauris convallis ligula diam, sit amet suscipit orci
-                      auctor in. Vivamus varius, turpis cursus lacinia dapibus,
-                      augue risus finibus arcu, nec congue eros massa cursus
-                      sem. Praesent feugiat tortor non porttitor posuere. In
-                      dapibus elementum ex eget pulvinar. Duis in mi porta,
-                      laoreet sapien ut, dignissim libero. Donec gravida eros
-                      mollis aliquet sollicitudin. Donec sit amet vestibulum
-                      orci. Pellentesque augue nisl, pretium at diam sed, luctus
-                      lacinia est. Sed fermentum leo eget mattis iaculis..
+                      Hvad tilbyder vi helt nøjagtigt her? Jeg tilbyder at give
+                      undervisning i branding, marketing og SoMe content
+                      creation, de er en del af branding og samlet skaber et
+                      solidt fundament for din virksomheds brand.
+                      <br />
+                      <br />
+                      Hvorfor lytte til mig? Fordi jeg har over 20 års erfaring
+                      med marketing og over 9 års erfaring som selvstændig, over
+                      disse år er der kommet mange redskaber i værktøjskassen.
                     </p>
                   </div>
                   <div className="s1-circle flex-center">

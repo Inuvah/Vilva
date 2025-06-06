@@ -152,13 +152,15 @@ body {
 /*Reuseable elements*/
 /*NAV-------------------------------------------------------*/
 nav {
+    position: relative;
     z-index: 10;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: start;
     border-bottom: 3px solid var(--accent);
-    .banner {
+}
+.banner {
         width: 100%;
         margin-top: -10rem;
     }
@@ -203,10 +205,31 @@ nav {
             color: var(--accentLighter);
         }
     }
+
+    .nav-phone {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .burger {
+        width: 2.5rem;
+        height: 0.5rem;
+        background-color: var(--accent);
+        border-radius: 10px;
+    }
+    .burger-middle {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    .nav-phone-menu {
+        display: none;
+    }
+
     .banner-logo {
         position: absolute;
         flex-direction: column;
-        bottom: min(16rem, 13%);
+        top: min(16rem, 13%);
         left: 10rem;
         color: var(--offWhite);
         height: min(25rem, 25vw);
@@ -234,11 +257,11 @@ nav {
             color: var(--white);
         }
     }
-}
 
 /*FOOTER--------------------------------------------------*/
 .logoArt {
-    width: 108%;
+    width: 100%;
+    margin-left:0;
 }
 footer {
     padding-top: 2.5rem;
@@ -311,6 +334,36 @@ input {
     color: var(--accent);
     border: solid 2px var(--accentLighter);
     transform: scale(1.2);
+}
+
+#footer-logo {
+    stroke-dasharray: 6914.97265625;
+    stroke-dashoffset: 6914.97265625;
+    animation:  footer-logo-fill 1s 2s ease-out forwards;
+    stroke: var(--accentLighter);
+    stroke-width: 1;
+    fill: none;
+}
+
+@keyframes footer-logo-stroke {
+    from {
+        stroke-dashoffset: 6914.97265625;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes footer-logo-fill {
+    from {
+        fill: transparent;
+        /* Use a clip-path to hide fill from left to right */
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        fill: var(--accentLighter);
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 /*WORKSHOP------------------------------------------------*/

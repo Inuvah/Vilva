@@ -781,3 +781,17 @@
     border-radius: 5px;
     border: 3px solid var(--accentLighter);
 }
+
+/******---------------------------------------------------MEDIA QUERIES*/
+@media screen and (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    .nav-phone {
+        display: none;
+    }
+}

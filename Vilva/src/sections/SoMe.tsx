@@ -70,19 +70,21 @@ export const SoMe = () => {
         <div>
           <div className="SoMe-s1-text-wrapper flex-center">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at
-              rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam,
-              sit amet suscipit orci auctor in. Vivamus varius, turpis cursus
-              lacinia dapibus, augue risus finibus arcu, nec congue eros massa
-              cursus sem. Praesent feugiat tortor non porttitor posuere. In
-              dapibus elementum ex eget pulvinar. Duis in mi porta, laoreet
-              sapien ut, dignissim libero. Donec gravida eros mollis aliquet
-              sollicitudin. Donec sit amet vestibulum orci. Pellentesque augue
-              nisl, pretium at diam sed, luctus lacinia est. Sed fermentum leo
-              eget mattis iaculis. Vestibulum convallis sit amet nisi non
-              lobortis. Nunc pellentesque nec ante nec commodo. Ut convallis
-              odio quis metus consequat laoreet at at nunc. Phasellus id ipsum
-              metus. Aenean non rutrum magna.
+              Jeg hjælper dig både i gang med at skabe content som er pæn og
+              fængende, men også at ordentligt planlægge en content schedule så
+              det er konsistent. Virkelig lærer dine valgte sociale platforme,
+              forstå hvordan du følger med deres konstante skift i algoritmen.
+              Alle de store platforme har også en masse data som kan bruges til
+              endnu bedre forstå dine kunder.
+              <br />
+              <br />
+              En af de sværeste udfordringer for mange er at skulle filme, især
+              ude i det offentlige. Jeg har stået i den samme situation så jeg
+              kan give en masse hjælp med at komme over hvor akavet det kan
+              være…
+              <br />
+              <br />
+              Er du stadig lidt i tvivl om, hvad SoMe er, så rul helt ned.
             </p>
           </div>
         </div>
@@ -95,9 +97,8 @@ export const SoMe = () => {
         <div className="flex-center flex-col SoMe-s2-cta">
           <h2 className="h2-white">Header</h2>
           <p className="p-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at
-            rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam,
-            sit amet suscipit orci auctor in.
+            Hvis du er interesseret i at se hvilke kurser vi tilbyder, så tryk
+            på knappen.
           </p>
           <button>Se mere</button>
         </div>
@@ -111,19 +112,27 @@ export const SoMe = () => {
         </div>
         <div className="SoMe-s3-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at
-            rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam,
-            sit amet suscipit orci auctor in. Vivamus varius, turpis cursus
-            lacinia dapibus, augue risus finibus arcu, nec congue eros massa
-            cursus sem. Praesent feugiat tortor non porttitor posuere. In
-            dapibus elementum ex eget pulvinar. Duis in mi porta, laoreet sapien
-            ut, dignissim libero. Donec gravida eros mollis aliquet
-            sollicitudin. Donec sit amet vestibulum orci. Pellentesque augue
-            nisl, pretium at diam sed, luctus lacinia est. Sed fermentum leo
-            eget mattis iaculis. Vestibulum convallis sit amet nisi non
-            lobortis. Nunc pellentesque nec ante nec commodo. Ut convallis odio
-            quis metus consequat laoreet at at nunc. Phasellus id ipsum metus.
-            Aenean non rutrum magna.
+            SoMe content er en kæmpe del af at opbygge et brand, kunder kan
+            komme helt tæt på og få en forståelse af dig eller virksomheden.
+            Hvis du kan give et godt indtryk her, har du allerede opbygget et
+            positivt brand i deres hovede.
+            <br />
+            <br />
+            SoMe beskriver sig selv ret godt, post content på sociale medier som
+            tillader kunder og potentielle kunder at lære dig og din virksomhed
+            at kende. Det varierer, hvor personligt det er ud fra hvilken
+            virksomhed og hvilket brand de gerne vil have.
+            <br />
+            <br />
+            Det en fantastisk måde for små virksomheder at komme tættere på
+            deres kunder, de bliver engageret på en helt anden måde end normale
+            reklamer. Reklamer fejler tit med at relatere og så er man bare
+            blevet desensibiliseret over for reklamer.
+            <br />
+            <br />
+            Det er en mulighed for at komme tættere på dine kunder og kan bruge
+            dine sociale netværk til at bedre forstå dine kunders behov og
+            ønsker.
           </p>
         </div>
       </section>

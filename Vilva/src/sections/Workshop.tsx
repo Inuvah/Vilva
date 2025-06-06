@@ -17,27 +17,25 @@ export const Workshop = () => {
         <div className="workshop-s1-text flex-a-center">
           <div className="workshop-s1-text-wrapper">
             <p className="p-blue">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at
-              rutrum nibh, quis fringilla sapien. Mauris convallis ligula diam,
-              sit amet suscipit orci auctor in.
+              Hvis du allerede står med en virksomhed, som mangler at få
+              defineret et brand i ønsker baseret på jeres værdier. Kan jeg
+              hjælpe dit team med at definere jeres brand og vedligeholde jeres
+              værdier i kundernes øjne.
               <br />
               <br />
-              Vivamus varius, turpis cursus lacinia dapibus, augue risus finibus
-              arcu, nec congue eros massa cursus sem. Praesent feugiat tortor
-              non porttitor posuere. In dapibus elementum ex eget pulvinar.
+              Hvis i selv vil lære hvordan I selv bygger og planlægger udførelse
+              af jeres ønskede brand, kan jeg tilbyde workshops hvor teamet kan
+              lærer alt hvad i har brug for. I får de redskaber og viden i skal
+              bruge ikke bare for at komme i gang, men at kunne fortsætte med at
+              udvikle jeres brandstrategi.
               <br />
               <br />
-              Duis in mi porta, laoreet sapien ut, dignissim libero. Donec
-              gravida eros mollis aliquet sollicitudin. Donec sit amet
-              vestibulum orci. Pellentesque augue nisl, pretium at diam sed,
-              luctus lacinia est. <br />
-              <br />
-              Sed fermentum leo eget mattis iaculis. Vestibulum convallis sit
-              amet nisi non lobortis. Nunc pellentesque nec ante nec commodo.
-              <br />
-              <br />
-              Ut convallis odio quis metus consequat laoreet at at nunc.
-              Phasellus id ipsum metus. Aenean non rutrum magna.
+              En dyb forståelse af de sociale platforme er en enorm faktor, jeg
+              kan give undervisning i de store platforme. Det er ikke bare at
+              poste, men først og fremmest forstå hvad dataen som du får tilbage
+              fortæller dig. Jeg sørger for at i forstår hvordan i følger
+              algoritmen den skal ikke altid reageres på, men kan heller ikke
+              helt ignoreres.
             </p>
           </div>
         </div>

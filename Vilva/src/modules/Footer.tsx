@@ -4,11 +4,23 @@ import linkedin from "../assets/linkedin.png";
 import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import logoWide from "../assets/SVG/logoArtWide.svg";
+import svgLogo from "../db/svg.json";
+const svgLogoData = svgLogo.SVG[0].path;
 
 export const Footer = () => {
   return (
     <>
-      <img className="logoArt" src={logoWide} alt="logo art" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="Layer_2"
+        data-name="Layer 2"
+        viewBox="0 0 1818.27 437.96"
+      >
+        <defs></defs>
+        <g id="Layer_3" data-name="Layer 3">
+          <path id="footer-logo" className="cls-1" d={svgLogoData} />
+        </g>
+      </svg>
       <footer>
         <div>
           <img className="logo" src={logo} alt="log" />

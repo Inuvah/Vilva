@@ -43,21 +43,32 @@ export const Nav = () => {
           </div>
           <div className="nav-anchor">Iværksætteri</div>
         </div>
-        <img src={banner} alt="banner" className="banner" />
-        <div className="tbd circle flex-center">
-          <p>
-            Siden er under konstruktion.
-            <br />
-            Computer version er første prioritet
-            <br />
-            Siden bliver opdateret lidt gennem forløbet kan ske fejl :)
-          </p>
-        </div>
-        <div className="banner-logo flex-center">
-          <img src={logoWhite} alt="logo white" className="footerLogo" />
-          <p>Fotograf. Visuel Branding. Webdesign</p>
-        </div>
       </nav>
+
+      <div className="nav-phone">
+        <div>
+          <div className="burger"></div>
+          <div className="burger burger-middle"></div>
+          <div className="burger"></div>
+        </div>
+        <div className="nav-phone-menu">
+          <Link to="/SoMe" className="nav-link">
+            SoMe
+          </Link>
+          <Link to="/Workshop" className="nav-link">
+            Virksomheder
+          </Link>
+          <Link to="/Blogs" className="nav-link">
+            Blogs
+          </Link>
+        </div>
+      </div>
+
+      <img src={banner} alt="banner" className="banner" />
+      <div className="banner-logo flex-center">
+        <img src={logoWhite} alt="logo white" className="footerLogo" />
+        <p>Fotograf. Visuel Branding. Webdesign</p>
+      </div>
     </>
   );
 };
